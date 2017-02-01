@@ -12,7 +12,7 @@ module.exports = [
         output: {
             path: path.join(__dirname, 'bundles'),
             publicPath: "/bundles/",
-            filename: '[name].bundle.[chunckhash].js'
+            filename: '[name].bundle.[chunkhash].js'
         },
         devServer: {
             inline: true,
