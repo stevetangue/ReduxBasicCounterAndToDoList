@@ -7,7 +7,7 @@ module.exports = [
     {
         /* Reactjs */
         entry: {
-            example: './main.js'
+            example: './App.js'
         },
         output: {
             path: path.join(__dirname, 'bundles'),
