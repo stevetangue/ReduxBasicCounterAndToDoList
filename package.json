@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
     "dev": "webpack -d --watch",
-	"build": "webpack -p --config webpack.config.prod.js"
+    "build": "webpack -p --config webpack.config.prod.js"
   },
   "author": "stevetangue",
   "license": "ISC",
@@ -28,6 +28,7 @@
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
+    "babel-preset-react-hmre": "^1.1.1",
     "css-loader": "^0.26.0",
     "cssnano": "^3.8.0",
     "expose-loader": "^0.7.1",
