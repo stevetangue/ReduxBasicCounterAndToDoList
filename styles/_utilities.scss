@@ -1,0 +1,319 @@
+/*
+ * utilities.scss
+*/
+/* debugger border styles */
+.b-b {
+    border:1px solid blue;
+}
+.b-r {
+    border:1px solid red;
+}
+.b-h {
+    border:1px solid hotpink;
+}
+.b-g {
+    border:1px solid green;
+}
+.b-p {
+    border:1px solid purple;
+}
+.b-gray {
+    border:5px solid #ddd;
+}
+.b-m {
+    border:1px solid maroon;
+}
+.b-t {
+    border:1px solid teal;
+}
+.b-a {
+    border:1px solid aqua;
+}
+.b-o {
+    border:1px solid orange;
+}
+
+/* 30px margin */
+.m-t30 {
+    margin-top:30px;
+}
+.m-b30 {
+    margin-bottom:30px;
+}
+.m-l30 {
+    margin-left:30px;
+}
+.m-r30 {
+    margin-right:30px;
+}
+/* 20px margin */
+.m-t20 {
+    margin-top:20px;
+}
+.m-b20 {
+    margin-bottom:20px;
+}
+.m-l20 {
+    margin-left:20px;
+}
+.m-r20 {
+    margin-right:20px;
+}
+/* 15px margin */
+.m-t15 {
+    margin-top:15px;
+}
+.m-b15 {
+    margin-bottom:15px;
+}
+.m-l15 {
+    margin-left:15px;
+}
+.m-r15 {
+    margin-right:15px;
+}
+/* 10px margin */
+.m-t10 {
+    margin-top:10px;
+}
+.m-b10 {
+    margin-bottom:10px;
+}
+.m-l10 {
+    margin-left:10px;
+}
+.m-r10 {
+    margin-right:10px;
+}
+/* 5px margin */
+.m-t5 {
+    margin-top:5px;
+}
+.m-b5 {
+    margin-bottom:5px;
+}
+.m-l5 {
+    margin-left:5px;
+}
+.m-r5 {
+    margin-right:5px;
+}
+/* 2px margin */
+.m-t2 {
+    margin-top:2px;
+}
+.m-b2 {
+    margin-bottom:2px;
+}
+.m-l2 {
+    margin-left:2px;
+}
+.m-r2 {
+    margin-right:2px;
+}
+/* 0px margin */
+.m-t0 {
+    margin-top:0!important; /* !important - because of _style.scss line 334 - .workpapercontent .alert, div#content .alert:not(.change-toolbar){ margin-top:15px} */
+}
+.m-b0 {
+    margin-bottom:0;
+}
+.m-l0 {
+    margin-left:0;
+}
+.m-r0 {
+    margin-right:0;
+}
+.m-none{
+    margin:0;
+}
+
+/* 10px padding */
+.p-t10 {
+    padding-top:10px;
+}
+.p-b10 {
+    padding-bottom:10px;
+}
+.p-l10 {
+    padding-left:10px;
+}
+.p-r10 {
+    padding-right:10px;
+}
+/* 5px padding */
+.p-t5 {
+    padding-top:5px;
+}
+.p-b5 {
+    padding-bottom:5px;
+}
+.p-l5 {
+    padding-left:5px;
+}
+.p-r5 {
+    padding-right:5px;
+}
+/* 2px padding */
+.p-t2 {
+    padding-top:2px;
+}
+.p-b2 {
+    padding-bottom:2px;
+}
+.p-l2 {
+    padding-left:2px;
+}
+.p-r2 {
+    padding-right:2px;
+}
+/* 0px padding */
+.p-t0 {
+    padding-top:0;
+}
+.p-b0 {
+    padding-bottom:0;
+}
+.p-l0 {
+    padding-left:0;
+}
+.p-r0 {
+    padding-right:0;
+}
+.p-none{
+    padding:0;
+    &.contentEditableInput[contenteditable] {
+        padding:0;
+    }
+    &.contentEditableTextarea[contenteditable] {
+            padding:0;
+    }
+}
+
+/* borders */
+.no-border-l {
+    border-left:none;
+}
+.no-border-r {
+    border-right:none;
+}
+.no-border-t {
+    border-top:none;
+}
+.no-border-b {
+    border-bottom:none;
+}
+.no-border {
+    border:none;
+
+    &.contentEditableInput[contenteditable] {
+        border:none;
+        &:hover {
+            border:none;
+        }
+        &:focus {
+            border:none;
+        }
+    }
+    &.contentEditableTextarea[contenteditable] {
+        border:none;
+        &:hover {
+            border:none;
+        }
+        &:focus {
+            border:none;
+        }
+    }
+}
+
+$gray-border: #dfdfdf;
+
+.border-l {
+    border-left:1px solid $gray-border;
+}
+.border-r {
+    border-right:1px solid $gray-border;
+}
+.border-t {
+    border-top:1px solid $gray-border;
+}
+.border-b {
+    border-bottom:1px solid $gray-border;
+}
+.border {
+    border:1px solid $gray-border;
+}
+
+/* background bg */
+/* bg dark grey */
+.bg-dg {
+    background:#ddd;
+}
+/* bg grey */
+.bg-g {
+   background:#eee;
+}
+/* bg light grey */
+.bg-lg {
+   background:#f3f3f3;
+}
+/* bg white */
+.bg-w {
+   background:#fff;
+}
+
+/* display hide */
+.display-none,
+.hide,
+.hidden {
+    display:none;
+}
+.display-block {
+    display:block!important;
+}
+
+/* position */
+.absolute-t-r {
+    position:absolute!important;
+    top:0!important;
+    right:0!important;
+}
+.absolute-t-l {
+    position:absolute!important;
+    top:0!important;
+    left:0!important;
+}
+.absolute-b-r {
+    position:absolute!important;
+    bottom:0!important;
+    right:0!important;
+}
+.absolute-b-l {
+    position:absolute!important;
+    bottom:0!important;
+    left:0!important;
+}
+
+/* no border radius */
+.no-radius  {
+     border-radius: 0;
+
+    &.contentEditableInput[contenteditable] {
+        border-radius: 0;
+        &:hover {
+             border-radius: 0;
+        }
+        &:focus {
+             border-radius: 0;
+        }
+    }
+    &.contentEditableTextarea[contenteditable] {
+        border-radius: 0;
+        &:hover {
+             border-radius: 0;
+        }
+        &:focus {
+             border-radius: 0;
+        }
+    }
+}
