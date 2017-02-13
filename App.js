@@ -3,6 +3,8 @@ import {render} from 'react-dom';
 import {createStore, combineReducers} from 'redux';
 import {Provider, connect} from 'react-redux';
 
+
+
 require('./styles/style.scss');
 import {exampleUiData} from './exampleUiData';
 
@@ -38,7 +40,7 @@ const Middle = (props) => {
 			<hr />
 			<XBottom />
 		</div>
-	);	
+	);
 }
 
 const Top = (props) => {
@@ -78,7 +80,6 @@ const XTop = connect(mapState, mapDispatch)(Top);
 const XBottom = connect(mapStateBasement, mapDispatchBasement)(Bottom);
 	render ((
 		<Provider store={createStore(combineReducers({reducerUp:reducerUp, reducerDown: reducerDown}))} >
-			<XTop />		
+			<XTop />
 		</Provider>
 	), document.getElementById('example01'));
-
