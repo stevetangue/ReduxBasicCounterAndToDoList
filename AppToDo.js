@@ -9,8 +9,7 @@ import App from './components/App'
 
 require('./styles/toDoApp.scss');
 
-let store = createStore(toDoApp)
-
+let store = createStore(todoApp);
 
 	render (
 		<Provider store={store} >
