@@ -12,7 +12,7 @@
   "author": "stevetangue",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.15.2",
+    "axios": "^0.19.2",
     "lodash": "^4.16.4",
     "react": "^15.3.1",
     "react-addons": "^0.9.1-deprecated",
